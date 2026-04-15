@@ -1,10 +1,12 @@
-import React from 'react';
+
+import { ThemeInit } from '../../.flowbite-react/init';
 import Navbar from '../component/common/Navbar';
 import { Outlet } from 'react-router';
 
 const Rootlayout = () => {
     return (
-        <div>
+        <div> 
+      <ThemeInit/>
             <Navbar/>
             <Outlet/>
         </div>
